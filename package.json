@@ -1,0 +1,44 @@
+{
+  "name": "vue3-pincode-input",
+  "version": "0.0.0",
+  "description": "Pincode input component for Vue3 applications.",
+  "main": "dist/vue-pincode-input.umd.js",
+  "module": "dist/vue-pincode-input.mjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "release:major": "npm version major && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:patch": "npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siriphonNott/vue3-pincode-input.git"
+  },
+  "keywords": [
+    "vue",
+    "pincode",
+    "vue-pincode",
+    "vue-pincode-input",
+    "pincode-input",
+    "vue-input",
+    "library"
+  ],
+  "author": "nottdev <[siriphonnot@gmail.com](mailto:siriphonnot@gmail.com)>",
+  "license": "MIT",
+  "homepage": "https://github.com/siriphonNott/vue3-pincode-input#readme",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vite": "^4.0.0",
+    "vite-plugin-css-injected-by-js": "^3.0.0",
+    "vue": "^3.2.45"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14.18.0",
+    "npm": ">=8.0.0"
+  }
+}
