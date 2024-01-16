@@ -8,6 +8,7 @@
       :type="secure ? 'password' : 'tel'"
       :placeholder="placeholder"
       maxlength="1"
+      :autocomplete="inputAutocomplete"
       class="vue-pincode-input"
       :class="[inputClasses, spacingClass]"
       @focus="focusedInputIndex = index"
@@ -50,6 +51,10 @@ export default {
       default: "",
     },
     spacingClass: {
+      type: String,
+      default: "",
+    },
+    inputAutocomplete: {
       type: String,
       default: "",
     },
