@@ -9,6 +9,7 @@
       :placeholder="placeholder"
       maxlength="1"
       :autocomplete="inputAutocomplete"
+      :inputmode="inputMode"
       class="vue-pincode-input"
       :class="[inputClasses, spacingClass]"
       @focus="focusedInputIndex = index"
@@ -55,6 +56,10 @@ export default {
       default: "",
     },
     inputAutocomplete: {
+      type: String,
+      default: "",
+    },
+    inputMode: {
       type: String,
       default: "",
     },
