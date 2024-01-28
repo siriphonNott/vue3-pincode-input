@@ -39,6 +39,20 @@ const pincode = reactive({
           autofocus
         />` }}
       </div>
+      <div class="default shadow">
+        <h2>Preview secure</h2>
+        <hr />
+        <VuePincodeInput
+          v-model="pincode.default"
+          :digits="4"
+          :preview="200"
+          secure
+        />
+        <div class="preview">pincode: {{ pincode.default }}</div>
+        <div class="code-preview">
+          {{ `<VuePincodeInput v-model="pincode" :preview="200" secure />` }}
+        </div>
+      </div>
     </div>
   </main>
   <footer>

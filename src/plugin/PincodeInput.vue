@@ -53,6 +53,10 @@ export default {
       type: String,
       default: "",
     },
+    preview: {
+      type: Number,
+      default: 0,
+    },
   },
   data() {
     return {
@@ -122,6 +126,12 @@ export default {
       }
       const currVal = this.inputs[this.focusedInputIndex];
       if (currVal) return (this.inputs[this.focusedInputIndex] = "");
+      if (this.preview && this.secure) {
+        e.target.type = "tel";
+        setTimeout(() => {
+          e.target.type = "password";
+        }, this.preview);
+      }
     },
     setInputWatcher(index) {
       const watchingProperty = `inputs.${index}`;
