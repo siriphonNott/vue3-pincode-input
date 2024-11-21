@@ -1,6 +1,6 @@
 {
   "name": "vue3-pincode-input",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Pincode input component for Vue3 applications.",
   "main": "dist/vue-pincode-input.umd.js",
   "module": "dist/vue-pincode-input.mjs",
